@@ -25,13 +25,14 @@ function init() {
    view: view
  });
  }
- onClick('elasticToMoscow', function() {
-     view.animate({
-       center: moscow,
-       duration: 2000,
-       easing: elastic
-     });
-   });
+function elasticToMoscow() {
+  view.animate({
+    center: moscow,
+    duration: 2000,
+    easing: elastic
+  })
+}
+
  function panHome() {
  view.animate({
    center: london,
